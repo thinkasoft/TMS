@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(792.0,612.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="14.0" width="678" height="583"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla11">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla15">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockBackground colorName="#ffff00" start="0,0" stop="0,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla6">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P2" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P3" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P4" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P5" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P6" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P7" rightIndent="-40.0" leftIndent="-42.0" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P8" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="9.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P13" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P14" fontName="Helvetica" fontSize="9.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P15" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="9.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="5.0" leading="6"/>
+    <paraStyle name="P18" fontName="Helvetica" fontSize="5.0" leading="6"/>
+    <paraStyle name="P19" rightIndent="-40.0" leftIndent="0.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P20" rightIndent="-40.0" leftIndent="0.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P21" rightIndent="-40.0" leftIndent="0.0" fontName="Helvetica" fontSize="5.0" leading="7" alignment="CENTER"/>
+    <paraStyle name="P22" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P23" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P24" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P25" fontName="Helvetica" fontSize="9.0" leading="10" alignment="CENTER"/>
+      <paraStyle name="P78" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="9.0" leading="10" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text_20_body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="7.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="7.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="9.0" leading="10" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Contents" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Heading" fontName="Helvetica" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P7">[[repeatIn(objects,'o')]]</para>
+
+<blockTable colWidths="142.0,314.0,128.0" style="Tabla1">
+      <tr>
+        <td>
+          <para style="P78">[[ o.shop_id.company_id.logo and setTag('para','image',{'width':'40.0','height':'30.0'}) ]] [[ o.shop_id.company_id.logo ]]</para>
+        </td>
+        <td>
+          <para style="P9"><b>[[(o.shop_id.company_id.name) or '']]</b></para>
+          <para style="P10"><b>SISTEMA INTEGRAL DE MANTENIMIENTO</b></para>
+          <para style="P25">ORDEN DE SERVICIO [[(o.name) or '']] UNIDAD [[(o.unit_id.name) or '']]</para>
+        </td>
+        <td>
+          <para style="P46">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+
+    <para style="P20">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="757.0" style="Tabla11">
+      <tr>
+        <td>
+          <para style="P12"><font face="Helvetica"></font></para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P19">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="757.0" style="Tabla15">
+      <tr>
+        <td>
+          <para style="P11">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P18">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="760.0" style="Tabla2">
+      <tr>
+        <td>
+          <para style="P16"><b>ORDEN DE SERVICIO [[(o.product_id.name) or '']]</b></para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="156.0,176.0,181.0,247.0" style="Tabla3">
+      <tr>
+        <td>
+          <para style="P13"><b>Vehículo: </b>[[(o.unit_id.name) or '']]</para>
+        </td>
+        <td>
+          <para style="P13"><b>Tipo de unidad: </b>[[(o.unit_id.fleet_type) or '']]</para>
+        </td>
+        <td>
+          <para style="P13"><b>Matricula: </b>[[(o.unit_id.license_plate) or '']]</para>
+        </td>
+        <td>
+          <para style="P13"><b>Ultima lectura del Odometro: </b>[[(o.unit_id.odometer) or '']]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P21">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="420.0,340.0" style="Tabla4">
+      <tr>
+        <td>
+          <para style="P14"><b>Operador: </b>[[(o.driver_id.name) or '']]</para>
+        </td>
+        <td>
+          <para style="P14"><b>Supervisor: </b>[[(o.supervisor_id.name) or '']]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14"><b>Ultimo Servicio:</b></para>
+        </td>
+        <td>
+          <para style="P14"><b>Fecha del Ultimo Servicio:</b></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14"><b>Fecha Inicio Programada: </b>[[formatLang(o.date_start, date_time=True) or '']]</para>
+        </td>
+        <td>
+          <para style="P14"><b>Fecha Inicio Real: </b>[[formatLang(o.date_start_real, date_time = True) or '']]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14"><b>Fecha Fin Programada: </b>[[formatLang(o.date_end, date_time = True) or '']]</para>
+        </td>
+        <td>
+          <para style="P14"><b>Fecha Fin Real: </b>[[formatLang(o.date_end_real, date_time = True) or '']]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P14"><b>Observaciones: </b>[[(o.notes) or '']]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+
+    <blockTable colWidths="499.0" style="Tabla1">
+      <tr> <td></td> </tr>
+    </blockTable>
+
+    <blockTable colWidths="189.0,141.0,108.0,128.0,112.0,80.0" style="Tabla5">
+      <tr>
+        <td>
+          <para style="P13"><b>Tareas Internas</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Mecánico</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Fecha/Hr(Inicio)</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Fecha/Hr(Fin)</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Estado</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Hrs. Reales</b></para>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <para style="P15">[[repeatIn(o.activities_ids,'p')]][[(p.product_id.name) if p.external_workshop == False else '']]</para>
+        </td>
+        <td>
+          <para style="P22">[[ ', '.join(map(lambda x: x.name, (p.mechanic_ids) or '')) if p.external_workshop == False else '']]</para>
+        </td>
+        <td>
+          <para style="P15">[[formatLang(p.date_start, date_time = True) if p.external_workshop == False else '']]</para>
+        </td>
+        <td>
+          <para style="P15">[[formatLang(p.date_end, date_time = True) if p.external_workshop == False else '']]</para>
+        </td>
+        <td>
+          <para style="P22">[[ ', '.join(map(lambda x: x.state, (p.product_line_ids) or '')) if p.external_workshop == False else '']]</para>
+        </td>
+        <td>
+          <para style="P15">[[(p.hours_real) if p.external_workshop == False else '']]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+
+    <blockTable colWidths="224.0,224.0,212.0" style="Tabla6">
+      <tr></tr><tr></tr>
+      <tr>
+        <td>
+          <para style="P13">_____________________________________</para>
+          <para style="P13"><b>Supervisor</b> [[(o.supervisor_id.name) or '']]</para>
+        </td>
+      
+        <td>
+          <para style="P13">_____________________________________</para>
+          <para style="P23"><b>Mecánico</b> [[ ', '.join(map(lambda x: x.name, (p.mechanic_ids) or '')) ]]</para>
+        </td>
+
+        <td>
+          <para style="P13">_____________________________________</para>
+          <para style="P13"><b>Operador: </b>[[(o.driver_id.name) or '']]</para>
+        </td>
+      </tr>
+    </blockTable>
+
+    <!-- Tareas Externas -->
+
+    <blockTable colWidths="499.0" style="Tabla1">
+      <tr> <td></td> </tr><tr> <td></td> </tr>
+    </blockTable>
+
+
+    <blockTable colWidths="189.0,161.0,108.0,128.0,92.0,80.0" style="Tabla5">
+      <tr>
+        <td>
+          <para style="P13"><b>Tareas Externas</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Proveedor</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Costo</b></para>
+        </td>
+        <td>
+          <para style="P13"><b>Estado</b></para>
+        </td>
+        <td>
+          <para style="P13"></para>
+        </td>
+        <td>
+          <para style="P13"></para>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <para style="P15">[[repeatIn(o.activities_ids,'ext')]][[(ext.product_id.name) if ext.external_workshop == True else '']]</para>
+        </td>
+        <td>
+          <para style="P22">[[(ext.supplier_id.name) if ext.external_workshop == True else '']]</para>
+        </td>
+        <td>
+          <para style="P15">[[(ext.cost_service_external) if ext.external_workshop == True else '']]</para>
+        </td>
+        <td>
+          <para style="P15">[[(ext.state) if ext.external_workshop == True else '']]</para>
+        </td>
+        <td>
+          <para style="P22"></para>
+        </td>
+        <td>
+          <para style="P15"></para>
+        </td>
+      </tr>
+    </blockTable>
+
+
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="760.0" style="Tabla6">
+      <tr></tr>
+      <tr>
+        <td>
+          <para style="P13">_________________________________</para>
+          <para style="P13"><b>GERENCIA</b> </para>
+        </td>
+      
+      </tr>
+    </blockTable>
+  </story>
+</document>
+

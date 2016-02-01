@@ -1,0 +1,26 @@
+<openerp>
+<data noupdate="0">
+    <!-- HERENCIA VISTA PRODUCTO -->
+
+    <record id="tms_product_reff_argil_ncm_inhrt" model="ir.ui.view">
+        <field name="name">product.product</field>
+        <field name="model">product.product</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <div name="ean" position="after">
+                <field name="seq_mant_id" attrs="{'invisible':[('tms_category','!=','maint_part')]}" readonly="1"/>
+            </div>
+            <field name="ean13" position="replace">
+                <field name="ean13" attrs="{'readonly':[('tms_category','=','maint_part')]}"/>
+            </field>
+            <field name="default_code" position="replace">
+                <field name="default_code" attrs="{'readonly':[('tms_category','=','maint_part')]}"/>
+            </field>
+        </field>
+    </record>
+        
+
+    </data>
+</openerp>
+

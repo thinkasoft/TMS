@@ -1,0 +1,22 @@
+<openerp>
+<data noupdate="1">
+    <!-- SECUENCIA -->
+        <record id="refacc_code" model="ir.sequence.type">
+            <field name="name">Codigo Refacciones Mantenimiento</field>
+            <field name="code">secuencia.refacciones.tms</field>
+        </record>
+
+
+        <record id="refacc_sequence" model="ir.sequence">
+            <field name="name">Secuencia para Refacciones</field>
+            <field name="code">secuencia.refacciones.tms</field>
+            <!-- <field name="prefix">%(year)s%(month)s%(day)s</field> -->
+            <field name="prefix">REFAC</field>
+            <field name="padding">3</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+        </record>
+    
+    </data>
+</openerp>
+
